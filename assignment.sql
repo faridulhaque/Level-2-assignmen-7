@@ -204,11 +204,9 @@ SELECT *
 from employees
 WHERE
     salary > 60000
-    
--- query 1 ended
----------------------------
----------------------------
-
+    -- query 1 ended
+    ---------------------------
+    ---------------------------
 
 -- query 2: Retrieve the names of employees using a limit of 2, starting from the 3rd employee.
 
@@ -222,8 +220,9 @@ from employees
     -- query 3 ended
     -- --------------------------
     -- --------------------------
-
 -- query 4: Retrieve the names of employees whose email addresses contain 'example.com', 'example.net', or 'google.com'.
+
+
 SELECT employee_name
 FROM employees
 WHERE
@@ -240,8 +239,10 @@ from employees
 WHERE
     department_name = 'Engineering'
     --query 5 ended
-    -- -------------------
-    --query 6: Update the status of the employee with the highest salary to 'Promoted'
+-- -------------------
+
+--query 6: Update the status of the employee with the highest salary to 'Promoted'
+
 
 UPDATE employees
 SET
@@ -254,7 +255,6 @@ WHERE
         LIMIT 1
     );
 
-
 -- -------------------
 -- query 7: Retrieve the department name and the average salary of employees in each department
 
@@ -264,7 +264,5 @@ FROM employees
 GROUP BY
     department_name;
 
-     
 -- query 7 ended
 --------------------------
-
